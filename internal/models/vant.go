@@ -49,3 +49,7 @@ func (v *VANT) HasMessage(message string) bool {
 
 	return false
 }
+
+func (v *VANT) CleanBuffer() {
+	v.MessagesBuffer = make(map[string][]int)
+}

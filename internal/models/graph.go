@@ -2,6 +2,7 @@ package models
 
 import (
 	"fmt"
+	"strings"
 )
 
 type Graph struct {
@@ -12,11 +13,22 @@ type Graph struct {
 
 func (g *Graph) PrintGraph() {
 	for _, node := range g.Nodes {
-		fmt.Printf("Node %d\n", node.ID)
+		fmt.Printf("Node %d (%f, %f, %f)\n", node.ID, node.X, node.Y, node.Z)
 		for _, edge := range g.Edges[node.ID] {
 			fmt.Printf("  -> Node %d, Weight: %f, TransmitionRate: %f\n", edge.To.ID, edge.Weight, edge.TransmitionRate)
 		}
 	}
+}
+
+func (g *Graph) ToString() string {
+	var sb strings.Builder
+	for _, node := range g.Nodes {
+		sb.WriteString(fmt.Sprintf("Node %d (%f, %f, %f)\n", node.ID, node.X, node.Y, node.Z))
+		for _, edge := range g.Edges[node.ID] {
+			sb.WriteString(fmt.Sprintf("  -> Node %d, Weight: %f, TransmitionRate: %f\n", edge.To.ID, edge.Weight, edge.TransmitionRate))
+		}
+	}
+	return sb.String()
 }
 
 func (g *Graph) AddProperty(key string, value interface{}) {

@@ -5,13 +5,17 @@ import (
 	"encoding/hex"
 	"fmt"
 	"math"
+	"math/rand/v2"
 	"time"
 	"vantsimulator/internal/models"
 )
 
-const (
-	maxDistance = 1000
-)
+func maxConnectionDistance(numDrones int) float64 {
+	volume := 100.0 * 100.0 * 100.0
+	c := 1.4
+	distance := c * math.Cbrt(volume/float64(numDrones))
+	return distance
+}
 
 func BuildGraphNetwork(vants []models.VANT) *models.Graph {
 	var graph models.Graph
@@ -24,7 +28,7 @@ func BuildGraphNetwork(vants []models.VANT) *models.Graph {
 		for _, otherVant := range vants {
 			if vant.ID != otherVant.ID {
 				dist := distance(vant, otherVant)
-				if dist < maxDistance {
+				if dist < maxConnectionDistance(len(vants)) {
 					graph.Edges[vant.ID] = append(graph.Edges[vant.ID], models.Edge{
 						To:              otherVant,
 						Weight:          dist,
@@ -36,6 +40,60 @@ func BuildGraphNetwork(vants []models.VANT) *models.Graph {
 		}
 	}
 	return &graph
+}
+
+func AddVant(graph *models.Graph, vant models.VANT) {
+	graph.Nodes = append(graph.Nodes, &vant)
+	for _, otherVant := range graph.Nodes {
+		if vant.ID != otherVant.ID {
+			dist := distance(vant, *otherVant)
+			if dist < maxConnectionDistance(len(graph.Nodes)) {
+				graph.Edges[vant.ID] = append(graph.Edges[vant.ID], models.Edge{
+					To:              *otherVant,
+					Weight:          dist,
+					TransmitionRate: transmitionRate(vant, *otherVant),
+					Id:              fmt.Sprintf("%d-%d", vant.ID, otherVant.ID),
+				})
+				graph.Edges[otherVant.ID] = append(graph.Edges[otherVant.ID], models.Edge{
+					To:              vant,
+					Weight:          dist,
+					TransmitionRate: transmitionRate(vant, *otherVant),
+					Id:              fmt.Sprintf("%d-%d", vant.ID, otherVant.ID),
+				})
+
+			}
+		}
+	}
+}
+
+func CentroideVant(graph *models.Graph) models.VANT {
+	var sumX float64
+	var sumY float64
+	var sumZ float64
+	var count float64
+
+	for _, vant := range graph.Nodes {
+		sumX += vant.X
+		sumY += vant.Y
+		sumZ += vant.Z
+		count++
+	}
+
+	return models.VANT{
+		ID: int(count) + 1,
+		X:  sumX / count,
+		Y:  sumY / count,
+		Z:  sumZ / count,
+	}
+}
+
+func RandomVant(graph *models.Graph, limitBox int) models.VANT {
+	var vant models.VANT
+	vant.X = float64(limitBox) * rand.Float64()
+	vant.Y = float64(limitBox) * rand.Float64()
+	vant.Z = float64(limitBox) * rand.Float64()
+	vant.ID = len(graph.Nodes) + 1
+	return vant
 }
 
 func distance(vant1 models.VANT, vant2 models.VANT) float64 {
@@ -93,13 +151,13 @@ func SendMessage(graph *models.Graph, origem *models.VANT, destino *models.VANT,
 
 	bits := stringToBits(message)
 
-	fmt.Println("Bits:", len(bits))
+	//fmt.Println("Bits:", len(bits))
 
 	for i := range n {
 		neighbor := graph.GetVantByID(n[i].ID)
 		//transmitionAvailable := graph.GetEdge(origem, neighbor).TransmitionAvailable
 		if neighbor.ID == destino.ID {
-			fmt.Println("Enviando mensagem de", origem.ID, "para", destino.ID)
+			//fmt.Println("Enviando mensagem de", origem.ID, "para", destino.ID)
 			messageEnd := false
 
 			edge := graph.GetEdge(origem, neighbor)
@@ -196,4 +254,10 @@ func generateHash(input string) string {
 	hashedString := hex.EncodeToString(hashedBytes)
 
 	return hashedString
+}
+
+func CleanBuffer(graph *models.Graph) {
+	for _, vant := range graph.Nodes {
+		vant.CleanBuffer()
+	}
 }
