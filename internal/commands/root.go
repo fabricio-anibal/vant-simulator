@@ -15,4 +15,5 @@ func Execute() error {
 
 func init() {
 	rootCmd.AddCommand(simCmd)
+	rootCmd.AddCommand(generateCmd)
 }

@@ -15,6 +15,5 @@ var simCmd = &cobra.Command{
 }
 
 func process() {
-	processor.Process()
-
+	processor.ProcessSim()
 }

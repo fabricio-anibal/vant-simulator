@@ -2,6 +2,7 @@ package processor
 
 import (
 	"fmt"
+	"math/rand/v2"
 	"os"
 	"path/filepath"
 	"strings"
@@ -18,7 +19,7 @@ const (
 
 var mu sync.Mutex
 
-func Process() {
+func ProcessSim() {
 	root := "./data"
 
 	var files []string
@@ -74,7 +75,7 @@ func testNetwork(vantsNetwork *models.Graph) (models.Stats, models.Stats, models
 	for _, vant := range vantsNetwork.Nodes {
 		wg.Add(1)
 
-		// Cópia de `vant` e `vantsNetwork` para evitar concorrência
+		// Cópia de vant e vantsNetwork para evitar concorrência
 		vantCopy := deepCopyVANT(vant)
 		vantsNetworkCopy := deepCopyGraph(vantsNetwork)
 
@@ -250,4 +251,27 @@ func deepCopyVANT(original *models.VANT) *models.VANT {
 	}
 
 	return copyVANT
+}
+
+func ProcessGenerator(qtdVants int, qtdFiles int) {
+	/*err := os.RemoveAll("./data")
+	if err != nil {
+		return
+	}
+
+	os.Mkdir("./data", os.ModePerm)*/
+
+	for i := 1; i <= qtdFiles; i++ {
+		filePath := fmt.Sprintf("./data/scenario_%d_%d.csv", qtdVants, i)
+
+		if _, err := os.Stat(filePath); err == nil {
+			os.Remove(filePath)
+		}
+		file, _ := os.Create(filePath)
+		defer file.Close()
+		file.WriteString("id,x,y,z\n")
+		for j := 1; j <= qtdVants; j++ {
+			file.WriteString(fmt.Sprintf("%d,%.2f,%.2f,%.2f\n", j, rand.Float64()*100, rand.Float64()*100, rand.Float64()*100))
+		}
+	}
 }
