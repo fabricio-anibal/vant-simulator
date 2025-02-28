@@ -1,0 +1,37 @@
+Node 1 (40.370000, 38.570000, 20.650000)
+  -> Node 2, Weight: 70.374471, TransmitionRate: 1247.106312
+  -> Node 3, Weight: 51.559625, TransmitionRate: 1283.549716
+  -> Node 4, Weight: 49.324939, TransmitionRate: 1288.740385
+  -> Node 5, Weight: 52.299822, TransmitionRate: 1281.879897
+  -> Node 6, Weight: 34.298474, TransmitionRate: 1331.303221
+Node 2 (83.930000, 90.270000, 40.200000)
+  -> Node 1, Weight: 70.374471, TransmitionRate: 1247.106312
+  -> Node 3, Weight: 51.486958, TransmitionRate: 1283.714937
+  -> Node 4, Weight: 34.635625, TransmitionRate: 1330.157304
+  -> Node 5, Weight: 81.225238, TransmitionRate: 1230.307988
+  -> Node 6, Weight: 41.239262, TransmitionRate: 1309.714245
+Node 3 (39.030000, 73.250000, 58.780000)
+  -> Node 1, Weight: 51.559625, TransmitionRate: 1283.549716
+  -> Node 2, Weight: 51.486958, TransmitionRate: 1283.714937
+  -> Node 4, Weight: 59.746699, TransmitionRate: 1266.285195
+  -> Node 5, Weight: 31.152915, TransmitionRate: 1342.571934
+  -> Node 6, Weight: 24.299048, TransmitionRate: 1371.679484
+Node 4 (84.330000, 60.910000, 21.830000)
+  -> Node 1, Weight: 49.324939, TransmitionRate: 1288.740385
+  -> Node 2, Weight: 34.635625, TransmitionRate: 1330.157304
+  -> Node 3, Weight: 59.746699, TransmitionRate: 1266.285195
+  -> Node 6, Weight: 37.480230, TransmitionRate: 1320.910806
+Node 5 (11.180000, 59.290000, 58.780000)
+  -> Node 1, Weight: 52.299822, TransmitionRate: 1281.879897
+  -> Node 2, Weight: 81.225238, TransmitionRate: 1230.307988
+  -> Node 3, Weight: 31.152915, TransmitionRate: 1342.571934
+  -> Node 6, Weight: 44.999798, TransmitionRate: 1299.491164
+Node 6 (51.768000, 64.458000, 40.048000)
+  -> Node 1, Weight: 34.298474, TransmitionRate: 1331.303221
+  -> Node 2, Weight: 41.239262, TransmitionRate: 1309.714245
+  -> Node 3, Weight: 24.299048, TransmitionRate: 1371.679484
+  -> Node 4, Weight: 37.480230, TransmitionRate: 1320.910806
+  -> Node 5, Weight: 44.999798, TransmitionRate: 1299.491164
+Minimo: [5] 17.999627
+Maximo: [1] 17.999834
+Media: [0] 17.999741

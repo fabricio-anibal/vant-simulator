@@ -1,0 +1,31 @@
+Node 1 (96.510000, 53.110000, 93.740000)
+  -> Node 5, Weight: 37.877928, TransmitionRate: 1319.674326
+  -> Node 6, Weight: 65.785812, TransmitionRate: 1255.005098
+Node 2 (26.520000, 21.360000, 1.250000)
+  -> Node 3, Weight: 40.873034, TransmitionRate: 1310.759221
+  -> Node 4, Weight: 75.312576, TransmitionRate: 1239.161815
+  -> Node 6, Weight: 58.977354, TransmitionRate: 1267.803466
+Node 3 (66.890000, 23.620000, 7.230000)
+  -> Node 2, Weight: 40.873034, TransmitionRate: 1310.759221
+  -> Node 4, Weight: 79.749650, TransmitionRate: 1232.455719
+  -> Node 5, Weight: 77.444531, TransmitionRate: 1235.891682
+  -> Node 6, Weight: 43.856114, TransmitionRate: 1302.506976
+Node 4 (30.820000, 91.710000, 27.790000)
+  -> Node 2, Weight: 75.312576, TransmitionRate: 1239.161815
+  -> Node 3, Weight: 79.749650, TransmitionRate: 1232.455719
+  -> Node 5, Weight: 63.247672, TransmitionRate: 1259.614342
+  -> Node 6, Weight: 50.088600, TransmitionRate: 1286.940585
+Node 5 (74.560000, 70.610000, 68.310000)
+  -> Node 1, Weight: 37.877928, TransmitionRate: 1319.674326
+  -> Node 3, Weight: 77.444531, TransmitionRate: 1235.891682
+  -> Node 4, Weight: 63.247672, TransmitionRate: 1259.614342
+  -> Node 6, Weight: 37.471724, TransmitionRate: 1320.937396
+Node 6 (59.060000, 52.082000, 39.664000)
+  -> Node 1, Weight: 65.785812, TransmitionRate: 1255.005098
+  -> Node 2, Weight: 58.977354, TransmitionRate: 1267.803466
+  -> Node 3, Weight: 43.856114, TransmitionRate: 1302.506976
+  -> Node 4, Weight: 50.088600, TransmitionRate: 1286.940585
+  -> Node 5, Weight: 37.471724, TransmitionRate: 1320.937396
+Minimo: [2] 17.999650
+Maximo: [3] 17.999879
+Media: [0] 17.999818
