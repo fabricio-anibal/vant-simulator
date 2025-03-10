@@ -271,7 +271,7 @@ func ProcessGenerator(qtdVants int, qtdFiles int) {
 		defer file.Close()
 		file.WriteString("id,x,y,z\n")
 		for j := 1; j <= qtdVants; j++ {
-			file.WriteString(fmt.Sprintf("%d,%.2f,%.2f,%.2f\n", j, rand.Float64()*100, rand.Float64()*100, rand.Float64()*100))
+			file.WriteString(fmt.Sprintf("%d,%.2f,%.2f,%.2f\n", j, rand.Float64()*LIMIT_BOX, rand.Float64()*LIMIT_BOX, rand.Float64()*LIMIT_BOX))
 		}
 	}
 }

@@ -1,0 +1,39 @@
+Node 1 (0.320000, 7.990000, 3.670000)
+  -> Node 4, Weight: 3.356337, TransmitionRate: 1603.581827
+Node 2 (0.400000, 0.850000, 2.490000)
+Node 3 (7.910000, 5.910000, 3.370000)
+  -> Node 8, Weight: 2.938860, TransmitionRate: 1619.142257
+  -> Node 10, Weight: 4.324887, TransmitionRate: 1573.880913
+Node 4 (1.270000, 8.550000, 6.840000)
+  -> Node 1, Weight: 3.356337, TransmitionRate: 1603.581827
+  -> Node 7, Weight: 3.629490, TransmitionRate: 1594.416031
+  -> Node 9, Weight: 4.748421, TransmitionRate: 1562.936348
+  -> Node 10, Weight: 4.310555, TransmitionRate: 1574.269775
+Node 5 (4.000000, 0.690000, 9.790000)
+Node 6 (9.760000, 9.700000, 6.950000)
+  -> Node 8, Weight: 4.109757, TransmitionRate: 1579.858006
+  -> Node 9, Weight: 4.337096, TransmitionRate: 1573.550688
+Node 7 (2.270000, 5.190000, 7.780000)
+  -> Node 4, Weight: 3.629490, TransmitionRate: 1594.416031
+  -> Node 9, Weight: 4.625181, TransmitionRate: 1566.016909
+  -> Node 10, Weight: 2.914301, TransmitionRate: 1620.125344
+Node 8 (9.190000, 5.740000, 6.010000)
+  -> Node 3, Weight: 2.938860, TransmitionRate: 1619.142257
+  -> Node 6, Weight: 4.109757, TransmitionRate: 1579.858006
+  -> Node 9, Weight: 4.527704, TransmitionRate: 1568.512211
+  -> Node 10, Weight: 4.638972, TransmitionRate: 1565.668133
+Node 9 (5.860000, 8.100000, 7.970000)
+  -> Node 4, Weight: 4.748421, TransmitionRate: 1562.936348
+  -> Node 6, Weight: 4.337096, TransmitionRate: 1573.550688
+  -> Node 7, Weight: 4.625181, TransmitionRate: 1566.016909
+  -> Node 8, Weight: 4.527704, TransmitionRate: 1568.512211
+  -> Node 10, Weight: 3.200674, TransmitionRate: 1609.144987
+Node 10 (4.553333, 5.857778, 6.096667)
+  -> Node 3, Weight: 4.324887, TransmitionRate: 1573.880913
+  -> Node 4, Weight: 4.310555, TransmitionRate: 1574.269775
+  -> Node 7, Weight: 2.914301, TransmitionRate: 1620.125344
+  -> Node 8, Weight: 4.638972, TransmitionRate: 1565.668133
+  -> Node 9, Weight: 3.200674, TransmitionRate: 1609.144987
+Minimo: [5] 0.000000
+Maximo: [3] 15.999794
+Media: [0] 12.799790

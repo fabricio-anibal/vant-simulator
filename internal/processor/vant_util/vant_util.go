@@ -15,6 +15,7 @@ func maxConnectionDistance(numDrones int) float64 {
 	c := 1.4
 	distance := c * math.Cbrt(volume/float64(numDrones))
 	return distance
+	//return 5
 }
 
 func BuildGraphNetwork(vants []models.VANT) *models.Graph {
