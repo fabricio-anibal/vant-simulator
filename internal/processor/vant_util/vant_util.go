@@ -11,11 +11,11 @@ import (
 )
 
 func maxConnectionDistance(numDrones int) float64 {
-	volume := 100.0 * 100.0 * 100.0
-	c := 1.4
-	distance := c * math.Cbrt(volume/float64(numDrones))
-	return distance
-	//return 5
+	//volume := processor.LIMIT_BOX * processor.LIMIT_BOX * processor.LIMIT_BOX
+	//c := 1.4
+	//distance := c * math.Cbrt(volume/float64(numDrones))
+	//return distance
+	return 9.0
 }
 
 func BuildGraphNetwork(vants []models.VANT) *models.Graph {

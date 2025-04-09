@@ -14,7 +14,7 @@ import (
 )
 
 const (
-	LIMIT_BOX = 100.0
+	LIMIT_BOX = 10.0
 )
 
 var mu sync.Mutex
@@ -111,8 +111,10 @@ func testNetwork(vantsNetwork *models.Graph) (models.Stats, models.Stats, models
 			max.Value = duration
 			max.Id = id
 		}
-		avg.Value += duration
-		count++
+		if duration > 0 {
+			avg.Value += duration
+			count++
+		}
 	}
 	avg.Value /= float64(count)
 

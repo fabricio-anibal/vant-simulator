@@ -1,0 +1,39 @@
+Node 1 (7.340000, 7.520000, 8.260000)
+  -> Node 2, Weight: 6.068525, TransmitionRate: 1534.199814
+  -> Node 3, Weight: 5.657252, TransmitionRate: 1542.420872
+  -> Node 4, Weight: 7.816713, TransmitionRate: 1504.544271
+  -> Node 5, Weight: 5.491311, TransmitionRate: 1545.908471
+  -> Node 6, Weight: 5.876908, TransmitionRate: 1537.958451
+Node 2 (6.870000, 3.710000, 3.560000)
+  -> Node 1, Weight: 6.068525, TransmitionRate: 1534.199814
+  -> Node 3, Weight: 4.309536, TransmitionRate: 1574.297468
+  -> Node 4, Weight: 4.202785, TransmitionRate: 1577.235847
+  -> Node 5, Weight: 3.721975, TransmitionRate: 1591.468348
+  -> Node 6, Weight: 5.311305, TransmitionRate: 1549.812914
+Node 3 (6.830000, 7.920000, 2.640000)
+  -> Node 1, Weight: 5.657252, TransmitionRate: 1542.420872
+  -> Node 2, Weight: 4.309536, TransmitionRate: 1574.297468
+  -> Node 4, Weight: 5.033736, TransmitionRate: 1556.100784
+  -> Node 5, Weight: 7.120492, TransmitionRate: 1515.472589
+  -> Node 6, Weight: 8.546055, TransmitionRate: 1494.094107
+Node 4 (2.950000, 4.720000, 2.430000)
+  -> Node 1, Weight: 7.816713, TransmitionRate: 1504.544271
+  -> Node 2, Weight: 4.202785, TransmitionRate: 1577.235847
+  -> Node 3, Weight: 5.033736, TransmitionRate: 1556.100784
+  -> Node 5, Weight: 7.094794, TransmitionRate: 1515.896134
+  -> Node 6, Weight: 8.208139, TransmitionRate: 1498.820229
+Node 5 (7.960000, 2.260000, 6.810000)
+  -> Node 1, Weight: 5.491311, TransmitionRate: 1545.908471
+  -> Node 2, Weight: 3.721975, TransmitionRate: 1591.468348
+  -> Node 3, Weight: 7.120492, TransmitionRate: 1515.472589
+  -> Node 4, Weight: 7.094794, TransmitionRate: 1515.896134
+  -> Node 6, Weight: 1.711577, TransmitionRate: 1682.472595
+Node 6 (7.691051, 1.654990, 8.388330)
+  -> Node 1, Weight: 5.876908, TransmitionRate: 1537.958451
+  -> Node 2, Weight: 5.311305, TransmitionRate: 1549.812914
+  -> Node 3, Weight: 8.546055, TransmitionRate: 1494.094107
+  -> Node 4, Weight: 8.208139, TransmitionRate: 1498.820229
+  -> Node 5, Weight: 1.711577, TransmitionRate: 1682.472595
+Minimo: [2] 11.999636
+Maximo: [4] 15.999432
+Media: [0] 13.832818
