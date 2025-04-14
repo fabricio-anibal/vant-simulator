@@ -542,6 +542,6 @@ Node 66 (52.402462, 50.562923, 51.149692)
   -> Node 31, Weight: 22.651279, TransmitionRate: 1379.905634
   -> Node 59, Weight: 25.421266, TransmitionRate: 1366.390436
   -> Node 64, Weight: 30.495910, TransmitionRate: 1345.068948
-Minimo: [34] 195.509674
-Maximo: [66] 198.019824
-Media: [0] 197.545598
+Minimo: [34] 195.448532
+Maximo: [5] 198.003408
+Media: [0] 197.649992

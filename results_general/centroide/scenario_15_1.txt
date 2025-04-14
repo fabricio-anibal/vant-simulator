@@ -104,6 +104,6 @@ Node 16 (52.618667, 53.192667, 42.533333)
   -> Node 13, Weight: 41.201099, TransmitionRate: 1309.822703
   -> Node 14, Weight: 53.849521, TransmitionRate: 1278.459146
   -> Node 15, Weight: 50.746118, TransmitionRate: 1285.412792
-Minimo: [15] 47.926025
-Maximo: [8] 48.000041
-Media: [0] 47.982697
+Minimo: [15] 47.879582
+Maximo: [1] 47.999824
+Media: [0] 47.969897

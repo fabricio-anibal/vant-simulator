@@ -147,6 +147,6 @@ Node 21 (48.343500, 48.953000, 47.480500)
   -> Node 18, Weight: 41.853031, TransmitionRate: 1307.983581
   -> Node 19, Weight: 50.074801, TransmitionRate: 1286.972863
   -> Node 20, Weight: 41.430022, TransmitionRate: 1309.173608
-Minimo: [20] 60.742807
-Maximo: [6] 63.000179
-Media: [0] 62.771996
+Minimo: [20] 60.821093
+Maximo: [11] 62.999043
+Media: [0] 62.811356

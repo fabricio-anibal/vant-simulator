@@ -905,6 +905,6 @@ Node 101 (48.895700, 54.958600, 43.944900)
   -> Node 62, Weight: 15.406474, TransmitionRate: 1425.057368
   -> Node 70, Weight: 27.770737, TransmitionRate: 1356.035032
   -> Node 96, Weight: 28.645836, TransmitionRate: 1352.400521
-Minimo: [73] 299.679710
-Maximo: [7] 303.011313
-Media: [0] 301.724959
+Minimo: [73] 299.848171
+Maximo: [7] 303.007851
+Media: [0] 301.718365

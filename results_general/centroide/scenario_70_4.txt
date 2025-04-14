@@ -723,6 +723,6 @@ Node 71 (56.304286, 50.362286, 51.989429)
   -> Node 60, Weight: 15.919035, TransmitionRate: 1421.223412
   -> Node 61, Weight: 24.897920, TransmitionRate: 1368.827297
   -> Node 69, Weight: 25.204717, TransmitionRate: 1367.392614
-Minimo: [26] 210.856642
-Maximo: [71] 213.007805
-Media: [0] 212.060825
+Minimo: [26] 210.578015
+Maximo: [5] 213.001190
+Media: [0] 212.126166

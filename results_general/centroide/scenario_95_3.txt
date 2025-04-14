@@ -890,6 +890,6 @@ Node 96 (48.290211, 47.587684, 51.325895)
   -> Node 80, Weight: 27.165354, TransmitionRate: 1358.616998
   -> Node 88, Weight: 26.673352, TransmitionRate: 1360.758136
   -> Node 95, Weight: 30.157646, TransmitionRate: 1346.375612
-Minimo: [85] 285.444943
-Maximo: [96] 288.068034
-Media: [0] 287.453846
+Minimo: [85] 285.450616
+Maximo: [51] 288.007490
+Media: [0] 287.429474

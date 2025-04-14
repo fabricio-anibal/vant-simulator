@@ -920,6 +920,6 @@ Node 86 (50.716706, 48.873647, 42.863529)
   -> Node 77, Weight: 20.154990, TransmitionRate: 1393.584219
   -> Node 79, Weight: 29.248252, TransmitionRate: 1349.962495
   -> Node 82, Weight: 29.818361, TransmitionRate: 1347.701029
-Minimo: [74] 256.709272
-Maximo: [54] 258.072206
-Media: [0] 257.639545
+Minimo: [74] 256.416826
+Maximo: [1] 257.994167
+Media: [0] 257.666124

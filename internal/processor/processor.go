@@ -14,7 +14,7 @@ import (
 )
 
 const (
-	LIMIT_BOX = 10.0
+	LIMIT_BOX = 100.0
 )
 
 var mu sync.Mutex

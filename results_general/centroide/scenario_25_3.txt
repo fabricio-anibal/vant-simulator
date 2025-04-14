@@ -166,6 +166,6 @@ Node 26 (51.798400, 47.401200, 51.450000)
   -> Node 19, Weight: 46.477497, TransmitionRate: 1295.706118
   -> Node 22, Weight: 42.645875, TransmitionRate: 1305.785163
   -> Node 23, Weight: 36.817938, TransmitionRate: 1322.999350
-Minimo: [25] 77.886739
-Maximo: [3] 77.999763
-Media: [0] 77.953845
+Minimo: [25] 77.681467
+Maximo: [7] 78.000008
+Media: [0] 77.901758

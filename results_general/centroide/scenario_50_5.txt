@@ -425,6 +425,6 @@ Node 51 (49.862200, 46.532000, 54.718800)
   -> Node 38, Weight: 27.754001, TransmitionRate: 1356.105650
   -> Node 40, Weight: 35.611510, TransmitionRate: 1326.902248
   -> Node 49, Weight: 29.399402, TransmitionRate: 1349.358658
-Minimo: [45] 151.250005
-Maximo: [4] 152.999044
-Media: [0] 152.553017
+Minimo: [45] 151.227381
+Maximo: [2] 152.995696
+Media: [0] 152.547964

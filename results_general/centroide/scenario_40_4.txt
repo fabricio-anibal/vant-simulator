@@ -315,6 +315,6 @@ Node 41 (39.672250, 51.919000, 42.096000)
   -> Node 14, Weight: 25.664688, TransmitionRate: 1365.274026
   -> Node 23, Weight: 31.699464, TransmitionRate: 1340.534523
   -> Node 39, Weight: 28.316485, TransmitionRate: 1353.755203
-Minimo: [40] 122.543336
-Maximo: [17] 122.999621
-Media: [0] 122.855992
+Minimo: [40] 122.362906
+Maximo: [5] 122.997748
+Media: [0] 122.743255

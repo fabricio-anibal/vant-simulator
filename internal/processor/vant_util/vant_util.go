@@ -10,12 +10,16 @@ import (
 	"vantsimulator/internal/models"
 )
 
+const (
+	LIMIT_BOX = 100.0
+)
+
 func maxConnectionDistance(numDrones int) float64 {
-	//volume := processor.LIMIT_BOX * processor.LIMIT_BOX * processor.LIMIT_BOX
-	//c := 1.4
-	//distance := c * math.Cbrt(volume/float64(numDrones))
-	//return distance
-	return 9.0
+	volume := LIMIT_BOX * LIMIT_BOX * LIMIT_BOX
+	c := 1.4
+	distance := c * math.Cbrt(volume/float64(numDrones))
+	return distance
+	//return 9.0
 }
 
 func BuildGraphNetwork(vants []models.VANT) *models.Graph {

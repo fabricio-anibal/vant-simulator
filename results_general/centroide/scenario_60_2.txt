@@ -547,6 +547,6 @@ Node 61 (47.832667, 53.180500, 45.698667)
   -> Node 57, Weight: 31.325315, TransmitionRate: 1341.925430
   -> Node 59, Weight: 17.223551, TransmitionRate: 1411.996682
   -> Node 60, Weight: 35.479714, TransmitionRate: 1327.336604
-Minimo: [49] 181.158269
-Maximo: [6] 183.024557
-Media: [0] 182.592969
+Minimo: [49] 181.167620
+Maximo: [3] 183.001182
+Media: [0] 182.568725

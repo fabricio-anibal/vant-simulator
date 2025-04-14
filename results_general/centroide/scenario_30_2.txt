@@ -191,6 +191,6 @@ Node 31 (50.298000, 53.124000, 50.218000)
   -> Node 20, Weight: 42.385319, TransmitionRate: 1306.503099
   -> Node 25, Weight: 35.167242, TransmitionRate: 1328.372893
   -> Node 27, Weight: 32.556539, TransmitionRate: 1337.409225
-Minimo: [30] 92.561408
-Maximo: [2] 92.998523
-Media: [0] 92.849369
+Minimo: [30] 92.538423
+Maximo: [1] 92.999357
+Media: [0] 92.821257

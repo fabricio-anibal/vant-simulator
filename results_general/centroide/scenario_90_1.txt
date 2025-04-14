@@ -805,6 +805,6 @@ Node 91 (52.399111, 51.429444, 44.408556)
   -> Node 71, Weight: 25.059785, TransmitionRate: 1368.068177
   -> Node 79, Weight: 22.443901, TransmitionRate: 1380.983082
   -> Node 86, Weight: 13.785775, TransmitionRate: 1438.078300
-Minimo: [48] 271.248791
-Maximo: [6] 273.055342
-Media: [0] 272.514220
+Minimo: [89] 271.178835
+Maximo: [6] 272.989552
+Media: [0] 272.489411

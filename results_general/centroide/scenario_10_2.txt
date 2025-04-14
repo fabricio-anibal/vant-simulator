@@ -71,6 +71,6 @@ Node 11 (56.314000, 52.959000, 49.805000)
   -> Node 8, Weight: 58.890158, TransmitionRate: 1267.976792
   -> Node 9, Weight: 48.958103, TransmitionRate: 1289.614878
   -> Node 10, Weight: 20.309013, TransmitionRate: 1392.692391
-Minimo: [10] 32.947724
-Maximo: [2] 32.999763
-Media: [0] 32.990832
+Minimo: [5] 32.999281
+Maximo: [2] 32.999653
+Media: [0] 32.999498

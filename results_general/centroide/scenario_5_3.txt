@@ -26,6 +26,6 @@ Node 6 (61.320000, 58.636000, 22.368000)
   -> Node 3, Weight: 47.974439, TransmitionRate: 1291.992554
   -> Node 4, Weight: 51.031991, TransmitionRate: 1284.754710
   -> Node 5, Weight: 41.506388, TransmitionRate: 1308.957875
-Minimo: [5] 17.999744
-Maximo: [1] 17.999851
-Media: [0] 17.999801
+Minimo: [4] 17.999779
+Maximo: [6] 17.999836
+Media: [0] 17.999806
